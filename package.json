@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "test:unit": "jest",
+    "generate:component": "hygen new fc",
+    "generate:page": "hygen new page-fc"
   },
   "dependencies": {
     "next": "latest",
