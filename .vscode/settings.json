@@ -6,8 +6,5 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslint.workingDirectories": [{ "mode": "auto" }],
-  "eslint.options": {
-    "ignorePattern": "webpack.config.js"
-  },
   "git.ignoreLimitWarning": true
 }
