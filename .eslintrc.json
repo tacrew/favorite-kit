@@ -1,6 +1,6 @@
 {
   "extends": ["next/core-web-vitals", "plugin:storybook/recommended"],
-  "plugins": ["@typescript-eslint","unused-imports"],
+  "plugins": ["@typescript-eslint", "unused-imports"],
   "rules": {
     "@next/next/no-img-element": "off",
     "no-unused-vars": "off",
@@ -16,21 +16,11 @@
     "import/order": [
       "error",
       {
-        "groups": [
-          "builtin",
-          "external",
-          "type",
-          "internal",
-          ["parent", "sibling"],
-          "object",
-          "index"
-        ],
+        "groups": ["builtin", "external", "type", "internal", ["parent", "sibling"], "object", "index"],
         "newlines-between": "always",
         "pathGroupsExcludedImportTypes": ["builtin"],
         "alphabetize": { "order": "asc", "caseInsensitive": true },
-        "pathGroups": [
-          { "pattern": "@/**", "group": "internal", "position": "before" }
-        ]
+        "pathGroups": [{ "pattern": "@/**", "group": "internal", "position": "before" }]
       }
     ],
     "unused-imports/no-unused-imports": "error"

@@ -1,7 +1,8 @@
+import type { CsvConfig } from './type';
+
 import { isSafariBrowser } from '@/utils/browser';
 
 import { convertArrayToCSV } from './formatter';
-import type { CsvConfig } from './type';
 
 export const generateCSVURI = (data: string[][], headers?: string[], config?: CsvConfig): string => {
   const csvString = convertArrayToCSV(data, headers, config);
